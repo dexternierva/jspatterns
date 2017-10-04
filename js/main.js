@@ -1,10 +1,11 @@
 require(
-    ['observer/init'],
-    function (observer) {
+    ['observer/init', 'decorator/init'],
+    function (observer, decorator) {
         'use strict';
 
         var examples = {
-            observer: observer
+            observer: observer,
+            decorator: decorator
         };
 
         window.runExample = function (example) {
